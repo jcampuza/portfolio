@@ -3,7 +3,6 @@ body, html {
     background-color: #2b2b2b;
     color: #f0f0f0;
     font-family: Montserrat, sans-serif;
-    line-height: 1.4;
     /*font-size: 140%;*/
 }
 
@@ -19,9 +18,8 @@ p {
 }
 
 .icon {
-  font-size: 65px;
-  margin: 0 1% 0 1%;
-  color: #337ab7;
+  margin: 15px 15px;
+  color: rgb(0, 170, 50);
   cursor: pointer;
 }
 
@@ -31,12 +29,41 @@ p {
 
 .projects {
   color: #2b2b2b;
+  background-color: #f1f1f0;
+}
+
+.wrapper {
   background-color: #fefefe;
+  border-radius: 20px;
+  border: 1px solid rgb(0,170,50);
+  padding: 2% 2% 2% 2%;
+  margin: 35px auto;
 }
 
 .head, .projects {
-  height: 100vh;
+  min-height: 100vh;
+}
+
+.head {
   display: flex;
   flex-direction: column;
   justify-content: center;
+}
+
+.links, a {
+  color: rgb(0, 170, 50);
+  margin: 0 10px;
+}
+.social {
+  margin: 15px 15px;
+}
+
+.button-custom {
+  margin: 5px 3px 5px 0px;
+  background-color:rgb(0,170,50);
+  color:#2b2b2b;
+}
+
+.image-wrapper {
+  height: 100%;
 }
