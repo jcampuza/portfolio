@@ -15,7 +15,7 @@ $(document).ready(function() {
   	galleryActive == true;
   	self = $(this);
 
-  	var gallery = self.parents().find('.image-wrapper').children();
+  	var gallery = self.closest('div').siblings('.image-wrapper').children();
   	var direction = self.attr('value');
   	if (direction == "next") {
   		var success = nextImage(gallery);
