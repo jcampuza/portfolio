@@ -83,3 +83,17 @@ p {
 .about-text {
   margin: 20px auto;
 }
+
+@keyframes point-down {
+  from {top: 0;}
+  to {opacity: 1; top: 50px;}
+}
+
+#goto-projects {
+  opacity: 0;
+  position: relative;
+  animation-name: point-down;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-out;
+}
