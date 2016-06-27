@@ -1,47 +1,18 @@
+/*
+colors
+
+#ffffff
+#494949
+#BFBFBF
+#000000
+*/
+
 body, html {
     height: 100%;
-    background-color: #2b2b2b;
-    color: #f0f0f0;
+    background-color: #171919;
+    color: #eeeeee;
     font-family: Montserrat, sans-serif;
     /*font-size: 140%;*/
-}
-
-h1, h2, h3 {
-  /*font-size: 2rem;*/ 
-}
-h4, h5 {
-  /*font-size: 1rem;*/
-}
-
-p {
-  /*font-size: .75rem;*/
-}
-
-.icon {
-  margin: 15px 15px;
-  color: rgb(0, 170, 50);
-  cursor: pointer;
-}
-
-.icon:hover {
-  color: rgb(0, 255, 0);
-}
-
-.projects {
-  color: #2b2b2b;
-  background-color: #f1f1f0;
-}
-
-.wrapper {
-  background-color: #fefefe;
-  border-radius: 20px;
-  border: 1px solid rgb(0,170,50);
-  padding: 2% 2% 2% 2%;
-  margin: 35px auto;
-}
-
-.head, .projects {
-  min-height: 100vh;
 }
 
 .head {
@@ -50,35 +21,66 @@ p {
   justify-content: center;
 }
 
+.icon {
+  margin: 15px 15px;
+  color: #ececec;
+  cursor: pointer;
+}
+.icon:hover {
+  color: #e51919;
+}
+
+.projects {
+  color: #131313;
+  background-color: #fff;
+}
+
+hr.line {
+  width: 95%;  
+  border-top: none !important;
+  background-image: linear-gradient(to right, rgb(255,255,255), rgb(20,20,20), rgb(255,255,255));
+  height: 1px;
+}
+.wrapper {
+  color: #313131;
+  /*border: 1px solid #000;*/
+  padding: 2% 2% 2% 2%;
+  margin: 35px auto;
+}
+img {
+  border: 1px solid #131313;
+  border-radius: 2px;
+}
+
+.head, .projects {
+  min-height: 100vh;
+}
+
 .links a {
-  color: rgb(0, 170, 50);
+  color: #eeeeee;
   margin: 0 10px;
+}
+.links a:hover {
+  color: #e51919;
 }
 
 .social {
   margin: 15px 15px;
 }
 
-.button-custom {
-  margin: 5px 3px 5px 0px;
-  background-color:rgb(0,170,50);
-  color:#2b2b2b;
-  border-color: #ccc;
-}
-.button-link {
-  color: #2b2b2b;
-  background-color: rgb(0,170,50);
-  border-color: #ccc;
-  float: right;
-}
 .image-wrapper, .image-options {
   margin-top: 10px;
 }
 .image-options a, .image-options button {
-  background-color: rgb(0,170,50);
+  background-color: #ffffff;
+  border: 1px solid black;
+  color: #131313;
+  border-radius: 0;
 }
 .image-options a:hover, .image-options button:hover {
-  background-color: rgb(0,200,0);
+  background-color: #1f1f1f;
+  color: #e51919;
+  border: 20px #777 #fff;
 }
 .about-text {
   margin: 20px auto;
