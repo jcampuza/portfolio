@@ -99,3 +99,9 @@ img {
   animation-iteration-count: infinite;
   animation-timing-function: ease-out;
 }
+
+@media only screen and (max-width: 768px) {
+  .fa-4x {
+    font-size: 2em;
+  }
+}
