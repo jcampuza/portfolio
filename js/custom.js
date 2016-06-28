@@ -1,10 +1,14 @@
-$(document).ready(function() {
+$("document").ready(function() {
   
   $("#goto-projects").click(function() {
     var loc= $("#projects").offset();
     $("body, html").animate({scrollTop: loc.top}, 1000);
   });
   
+  $('img').on('click', function() {
+    $('body').append('<div id="dialog" title="image"><src="' + $(this).attr('src') + '" width="300"/></div>');
+    $('#dialog').dialog();
+  })
   //Image gallery
   var galleryActive = false;
   $(".image-choice").click(function() {

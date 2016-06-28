@@ -12,7 +12,6 @@ body, html {
     background-color: #171919;
     color: #eeeeee;
     font-family: Montserrat, sans-serif;
-    /*font-size: 140%;*/
 }
 
 .head {
@@ -23,16 +22,37 @@ body, html {
 
 .icon {
   margin: 15px 15px;
-  color: #ececec;
+  color: #337ab7;
   cursor: pointer;
 }
 .icon:hover {
   color: #e51919;
 }
 
-.projects {
+.projects, .skills {
   color: #131313;
   background-color: #fff;
+}
+
+.skills {
+  background-color: #eeeeee; 
+}
+.skills-logos {
+  display: inline-flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  justify-content: center;
+  width: 100%;
+}
+.logo {
+  display: inline-block;
+  margin: 0 25px 15px 0;
+  text-align: center;
+  max-width: 90px;
+}
+.logo img {
+  border: none;
+  width: 91px;
 }
 
 hr.line {
@@ -52,12 +72,11 @@ img {
   border-radius: 2px;
 }
 
-.head, .projects {
+.head, .projects, .skills {
   min-height: 100vh;
 }
 
 .links a {
-  color: #eeeeee;
   margin: 0 10px;
 }
 .links a:hover {
@@ -66,6 +85,9 @@ img {
 
 .social {
   margin: 15px 15px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
 
 .image-wrapper, .image-options {
@@ -90,7 +112,6 @@ img {
   from {top: 0;}
   to {opacity: 1; top: 50px;}
 }
-
 #goto-projects {
   opacity: 0;
   position: relative;
@@ -107,4 +128,29 @@ img {
   #goto-projects {
     font-size: 4em;
   }
+}
+
+form {
+  margin: 10px;
+}
+input, textarea {
+  margin-bottom: 10px;
+  width: 100%;
+  color: #131313;
+  padding: 4px;
+}
+input[type="submit"] {
+  width: 100px;
+}
+
+@media only screen and (max-width: 768px) {
+  input[type="submit"] {
+    width: 100%;
+  }
+}
+
+.copyright {
+  text-align: center;
+  font-size: 50%;
+  margin: 10px;
 }
