@@ -43,16 +43,44 @@ body, html {
   align-items: flex-end;
   justify-content: center;
   width: 100%;
+  margin-bottom: 25px;
 }
 .logo {
   display: inline-block;
-  margin: 0 25px 15px 0;
+  margin: 0 25px 15px 25px;
   text-align: center;
   max-width: 90px;
 }
 .logo img {
   border: none;
   width: 91px;
+}
+.header:after {
+  display: block;
+  height: 1px;
+  background-color: #131313 ;
+  content: '';
+  width: 100px;
+  margin: 20px auto;
+  margin-bottom: 50px;
+}
+.skills {
+  padding: 0 80px 80px 80px;
+}
+
+@media only screen and (max-width: 768px) {
+  .header:after {
+    margin-bottom: 20px;
+    margin-top: 15px;
+  }
+  .logo {
+    margin: 0px;
+    margin-right: 5px;
+    margin-left: 5px;
+  }
+  .skills {
+    padding: 0 10px 10px 10px;
+  } 
 }
 
 hr.line {
@@ -64,7 +92,7 @@ hr.line {
 .wrapper {
   color: #313131;
   /*border: 1px solid #000;*/
-  padding: 2% 2% 2% 2%;
+  padding: 0 2% 2% 2%;
   margin: 35px auto;
 }
 img {
@@ -72,7 +100,7 @@ img {
   border-radius: 2px;
 }
 
-.head, .projects, .skills {
+.head, .projects {
   min-height: 100vh;
 }
 
