@@ -1,0 +1,57 @@
+@import url(https://fonts.googleapis.com/css?family=Russo+One&subset=latin,latin-ext);
+
+html, body {
+  font-size: 14px;
+  background-color: rgb(200,200,200);
+}
+
+h1 {
+  text-align: left;
+  font-family: 'Russo One', sans-serif;
+}
+
+.online {
+  background-color: #c0bad2;
+}
+.offline {
+  background-color: #1f1e1e;
+  color: purple;
+}
+
+.container {
+  background-color: #e1e1e1;
+  margin: 0px auto;
+  padding: 0px;
+  max-width: 768px;
+  border: 1px solid grey;
+}
+
+.row {
+  padding: 4px;
+  margin: 1px 0;
+  line-height: 75px;
+}
+
+.logo {
+  max-height: 75px;
+  max-width: 75px;
+  border-radius: 50%;
+  border: 1px solid black;
+}
+
+#name, #desc {
+  height: 75px;
+  line-height: 75px;
+  overflow: hidden;
+  text-overflow: ellipses;
+  white-space: no-wrap;
+  text-align: center;
+}
+
+@media only screen and (max-width: 768px) {
+  #name, #desc {
+    line-height: 38px;
+    height: 38px;
+  }
+}
+
