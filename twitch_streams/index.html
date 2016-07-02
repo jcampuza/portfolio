@@ -17,19 +17,28 @@
 <body>
   <div class="container">
     <div class="row">
-      <div class="col-md-6">
-        <h1>Twitch Streamers</h1>
-      </div>
-    <!-- Buttons -->
-      <div class="col-md 6" style="display: ;">
-        <button id="all" class="btn btn-primary">Show All</button>
-       <button id="online" class="btn btn-success">Show Online</button>
-        <button id="offline" class="btn btn-danger">Show Offline</button>
+      <h1 class="text-center">Twitch Streamers</h1>
+      <!-- Buttons -->
+      <div class="buttons" style="">
+        <button id="all" class="btn">Show All</button>
+        <button id="online" class="btn">Show Online</button>
+        <button id="offline" class="btn">Show Offline</button>
       </div>
     </div>
-    <!-- End Buttons -->
-    <!-- Streamers -->
-    <div class="streamers">
+  <!-- End Buttons -->
+  <!-- Streamers -->
+    <div class="row">
+      <div class="streamers">
+      </div>
+    </div>
+    <div class="row">
+      <div class="search">
+        <span>Search for a Streamer</span>
+        <div style="display: flex">
+          <input type="text" placeholder="Search">
+          <button class="btn" id="search">Search</button>
+        </div>
+      </div>
     </div>
   </div>
 
