@@ -126,6 +126,7 @@ img {
   border: 1px solid black;
   color: #131313;
   border-radius: 0;
+  position: relative;
 }
 .image-options a:hover, .image-options button:hover {
   background-color: #1f1f1f;
@@ -181,4 +182,25 @@ input[type="submit"] {
   text-align: center;
   font-size: 50%;
   margin: 10px;
+}
+
+a.btn, button.image-choice {
+  overflow: hidden;
+}
+a.btn:hover, button.image-choice:hover{
+  background-color: #ffffff;
+}
+a.btn:before, button.image-choice:before{
+  content: '';
+  background: #131313;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translateY(100%);
+  transition: .3s cubic-bezier(0.5,0,0.5,1);
+}
+a.btn:hover:before, button.image-choice:hover:before{
+  transform: translateY(-100%);
 }
