@@ -1,17 +1,24 @@
 /*
 colors
 
-#ffffff
-#494949
-#BFBFBF
+#f2f2f2
+#ef4c4c
+#131313
 #000000
 */
 
 body, html {
     height: 100%;
     background-color: #171919;
-    color: #eeeeee;
+    color: #f2f2f2;
     font-family: Montserrat, sans-serif;
+}
+
+a {
+  color: #eeeeee;
+} 
+a:hover {
+  color: #949494;
 }
 
 .head {
@@ -22,11 +29,12 @@ body, html {
 
 .icon {
   margin: 15px 15px;
-  color: #337ab7;
+  color: #eeeeee;
   cursor: pointer;
+  transition: color .2s ease;
 }
 .icon:hover {
-  color: #e51919;
+  color: #949494;
 }
 
 .projects, .skills {
@@ -107,9 +115,6 @@ img {
 .links a {
   margin: 0 10px;
 }
-.links a:hover {
-  color: #e51919;
-}
 
 .social {
   margin: 15px 15px;
@@ -128,11 +133,7 @@ img {
   border-radius: 0;
   position: relative;
 }
-.image-options a:hover, .image-options button:hover {
-  background-color: #1f1f1f;
-  color: #e51919;
-  border: 20px #777 #fff;
-}
+
 .about-text {
   margin: 20px auto;
 }
