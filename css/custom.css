@@ -12,6 +12,7 @@ body, html {
     background-color: #171919;
     color: #f2f2f2;
     font-family: Montserrat, sans-serif;
+    font-size: 14px;
 }
 
 a {
@@ -136,6 +137,8 @@ img {
 
 .about-text {
   margin: 20px auto;
+  font-size: 1.3em;
+  line-height: 1.6;
 }
 
 @keyframes point-down {
