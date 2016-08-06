@@ -189,6 +189,7 @@ img {
   from {top: 0;}
   to {opacity: 1; top: 50px;}
 }
+
 #goto-projects {
   opacity: 0;
   position: relative;
@@ -197,6 +198,13 @@ img {
   animation-iteration-count: infinite;
   animation-timing-function: ease-out;
 }
+
+@media only screen and (max-width: 767px) {
+  #goto-projects {
+    opacity: 1;
+    animation: none;
+  }
+};
 
 /* Form element */
 
