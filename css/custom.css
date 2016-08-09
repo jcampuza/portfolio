@@ -159,7 +159,7 @@ footer {
 }
 
 img {
-  border: 1px solid #131313;
+  border: 1px solid #555;
   border-radius: 2px;
 }
 
@@ -178,11 +178,19 @@ img {
   margin-top: 10px;
 }
 .image-options a, .image-options button {
-  background-color: #ffffff;
-  border: 1px solid black;
-  color: #131313;
-  border-radius: 0;
+  background-color: #F0F3F0;
+  border: 1px solid #454545;
+  color: #333333;
+  border-radius: 2px;
   position: relative;
+  text-align: center;
+  padding: 10px 12px;
+  line-height: 1.4;
+  font-size: 18px;
+}
+
+.button {
+
 }
 
 @keyframes point-down {
