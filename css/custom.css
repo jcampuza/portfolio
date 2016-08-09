@@ -85,6 +85,20 @@ footer a:hover {
   color: #ff6214;
 }
 
+/* Default Button Styling */
+
+.button {
+  background-color: #F0F3F0;
+  border: 1px solid #454545;
+  color: #333333;
+  border-radius: 2px;
+  position: relative;
+  text-align: center;
+  padding: 10px 12px;
+  line-height: 1.4;
+  font-size: 18px;
+}
+
 /* Icons/Horizontal Rules */
 
 .icon {
@@ -176,21 +190,6 @@ img {
 
 .image-wrapper, .image-options {
   margin-top: 10px;
-}
-.image-options a, .image-options button {
-  background-color: #F0F3F0;
-  border: 1px solid #454545;
-  color: #333333;
-  border-radius: 2px;
-  position: relative;
-  text-align: center;
-  padding: 10px 12px;
-  line-height: 1.4;
-  font-size: 18px;
-}
-
-.button {
-
 }
 
 @keyframes point-down {
